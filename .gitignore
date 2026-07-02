@@ -1,0 +1,33 @@
+# ==============================
+# Node / React
+# ==============================
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ==============================
+# Python / Flask
+# ==============================
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/instance/
+backend/portfolio.db
+backend/.env
+
+# ==============================
+# General
+# ==============================
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# ==============================
+# Docker
+# ==============================
+*.pid

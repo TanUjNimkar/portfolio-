@@ -19,7 +19,7 @@ A production-grade, full-stack portfolio website built with React and Flask, sho
 ## 🏠 Home
 
 <p align="center">
-  <img src="./assets/home.png" alt="Portfolio Home" width="100%">
+  <img src="assets/home.png" alt="Portfolio Home" width="100%">
 </p>
 
 ---
@@ -27,7 +27,7 @@ A production-grade, full-stack portfolio website built with React and Flask, sho
 ## 🚀 Projects
 
 <p align="center">
-  <img src="./assets/projects.png" alt="Portfolio Projects" width="100%">
+  <img src="assets/projects.png" alt="Portfolio Projects" width="100%">
 </p>
 
 ---
@@ -35,7 +35,7 @@ A production-grade, full-stack portfolio website built with React and Flask, sho
 ## 📬 Contact
 
 <p align="center">
-  <img src="./assets/contact.png" alt="Portfolio Contact" width="100%">
+  <img src="assets/contact.png" alt="Portfolio Contact" width="100%">
 </p>
 
 ---

@@ -16,10 +16,26 @@ A production-grade, full-stack portfolio website built with React and Flask, sho
 
 # 📸 Preview
 
-> Replace the image below with an actual screenshot of your portfolio.
+## 🏠 Home
 
 <p align="center">
-  <img src="https://via.placeholder.com/900x500/0a0e17/ff9900?text=Portfolio+Homepage+Screenshot" alt="Portfolio Screenshot" width="100%">
+  <img src="./assets/home.png" alt="Portfolio Home" width="100%">
+</p>
+
+---
+
+## 🚀 Projects
+
+<p align="center">
+  <img src="./assets/projects.png" alt="Portfolio Projects" width="100%">
+</p>
+
+---
+
+## 📬 Contact
+
+<p align="center">
+  <img src="./assets/contact.png" alt="Portfolio Contact" width="100%">
 </p>
 
 ---

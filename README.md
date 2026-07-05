@@ -384,8 +384,8 @@ This project is licensed under the MIT License.
 AWS Certified DevOps Engineer
 
 - GitHub: https://github.com/TanUjNimkar
-- LinkedIn: https://linkedin.com/in/tanuj-nimkar
-- Email: tanujnimkar.cloud@.com
+- LinkedIn: https://linkedin.com/in/your-linkedin
+- Email: your-email@example.com
 
 📍 Nagpur, India
 

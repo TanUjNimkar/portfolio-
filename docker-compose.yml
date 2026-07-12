@@ -2,8 +2,7 @@ version: "3.9"
 
 services:
   backend:
-    build:
-      context: ./backend
+    image: tanuj7777777/portfolio-backend:latest
     container_name: portfolio-backend
     restart: unless-stopped
     environment:
@@ -14,8 +13,7 @@ services:
       - portfolio-net
 
   frontend:
-    build:
-      context: ./frontend
+    image: tanuj7777777/portfolio-frontend:latest
     container_name: portfolio-frontend
     restart: unless-stopped
     networks:

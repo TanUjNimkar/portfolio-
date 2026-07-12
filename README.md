@@ -385,7 +385,7 @@ AWS Certified DevOps Engineer
 
 - GitHub: https://github.com/TanUjNimkar
 - LinkedIn: https://linkedin.com/in/tanuj-nimkar
-- Email: tanujnimkar.cloud@.com
+- Email: tanujnimkar.cloud@gmail.com
 
 📍 Nagpur, India
 

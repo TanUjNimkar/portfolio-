@@ -387,6 +387,7 @@ AWS Certified DevOps Engineer
 - LinkedIn: https://linkedin.com/in/your-linkedin
 - Email: your-email@example.com
 
+
 📍 Nagpur, India
 
 ---
@@ -400,3 +401,4 @@ Built with ❤️ using React, Flask, Docker, Nginx, and AWS.
 </div>
 
 
+this is my updated readme now iwant to add this on my main brache

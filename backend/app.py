@@ -48,73 +48,75 @@ def create_app():
 
 def seed_data():
     """Seed the database only if empty."""
+
     if Project.query.first() is None:
         projects = [
             Project(
+                title="AWS 3-Tier Web Architecture (Terraform)",
+                description="Provisioned a production-ready AWS 3-tier architecture using modular Terraform, automating VPC, EC2, ALB, Auto Scaling Groups, RDS MySQL, IAM, and networking for repeatable infrastructure deployments.",
+                github="https://github.com/TanUjNimkar/aws-3tier-web-architecture-terraform",
+                technologies="Terraform,AWS,VPC,EC2,ALB,Auto Scaling,RDS,MySQL,IAM,NAT Gateway",
+                category="Infrastructure as Code",
+                icon="diagram",
+            ),
+            Project(
+                title="AWS 3-Tier Web Architecture",
+                description="Designed and deployed a secure, highly available 3-tier web architecture on AWS using VPC, EC2, ALB, Auto Scaling Groups, RDS MySQL, IAM, NAT Gateway, and S3 following AWS Well-Architected principles.",
+                github="https://github.com/TanUjNimkar/aws-3tier-web-architecture",
+                technologies="AWS,VPC,EC2,ALB,Auto Scaling,RDS,S3,IAM,NAT Gateway",
+                category="Cloud Infrastructure",
+                icon="cloud",
+            ),
+            Project(
                 title="Production-Grade Cloud Native E-Commerce Platform",
-                description="Production-ready cloud-native e-commerce platform deployed on AWS EKS using Terraform, GitOps, Helm, and ArgoCD.",
+                description="Built and deployed a production-ready cloud-native e-commerce platform on Amazon EKS using Terraform, Helm, ArgoCD, NGINX Ingress, and CloudWatch monitoring.",
                 github="https://github.com/TanUjNimkar/Production-Grade-Cloud-Native-E-Commerce-Platform",
                 technologies="AWS,EKS,Terraform,Docker,ArgoCD,Helm,CloudWatch,NGINX,Cert-Manager",
-                category="Cloud Infrastructure",
+                category="Cloud Native",
                 icon="cart",
             ),
             Project(
+                title="Secure Delivery Platform",
+                description="Production-style DevSecOps platform integrating GitHub Actions, SonarQube, Trivy, CodeQL, Docker, and AWS for secure software delivery.",
+                github="https://github.com/TanUjNimkar/secure-delivery-platform",
+                technologies="GitHub Actions,SonarQube,Trivy,CodeQL,Docker,AWS",
+                category="DevSecOps",
+                icon="shield",
+            ),
+            Project(
                 title="End-to-End DevOps CI/CD Pipeline",
-                description="Complete DevSecOps pipeline: Build -> Test -> SonarQube -> Trivy -> Docker -> EC2 Deploy.",
+                description="Designed a complete CI/CD pipeline including build, testing, SonarQube quality gates, Trivy vulnerability scanning, Docker image publishing, and automated EC2 deployment.",
                 github="https://github.com/TanUjNimkar/end-to-end-devops-cicd-pipeline",
-                technologies="Jenkins,Docker,AWS,SonarQube,Trivy,GitHub",
+                technologies="Jenkins,Docker,AWS,SonarQube,Trivy,GitHub Actions",
                 category="CI/CD",
                 icon="jenkins",
             ),
             Project(
                 title="Terraform Bootstrap",
-                description="Terraform bootstrap project for AWS infrastructure and remote backend configuration.",
+                description="Provisioned reusable Terraform remote state infrastructure using Amazon S3 and DynamoDB for secure state management and state locking.",
                 github="https://github.com/TanUjNimkar/terraform-bootstrap",
                 technologies="Terraform,AWS,S3,DynamoDB",
                 category="Infrastructure as Code",
                 icon="diagram",
             ),
             Project(
-                title="Simple Quiz DevOps",
-                description="Simple quiz application demonstrating Docker, CI/CD, and deployment practices.",
-                github="https://github.com/TanUjNimkar/simple-quiz-devops",
-                technologies="Docker,GitHub Actions,AWS",
-                category="CI/CD",
-                icon="question",
-            ),
-            Project(
-                title="DevSecOps GitOps EKS Platform",
-                description="Enterprise DevSecOps platform with Kubernetes, GitOps, ArgoCD, and security scanning.",
-                github="https://github.com/TanUjNimkar/devsecops-gitops-eks-platform",
-                technologies="Kubernetes,ArgoCD,Helm,Trivy,SonarQube",
-                category="DevSecOps",
-                icon="shield",
-            ),
-            Project(
-                title="AWS EKS GitOps Ecommerce Platform",
-                description="Cloud-native e-commerce application deployed on Amazon EKS using GitOps principles.",
+                title="AWS EKS GitOps E-Commerce Platform",
+                description="Implemented GitOps-based application delivery on Amazon EKS using ArgoCD, Terraform, Docker, Helm, and Kubernetes best practices.",
                 github="https://github.com/TanUjNimkar/aws-eks-gitops-ecommerce-platform",
-                technologies="AWS,Terraform,ArgoCD,Docker,Helm",
-                category="Cloud Native",
+                technologies="AWS,EKS,Terraform,ArgoCD,Docker,Helm",
+                category="GitOps",
                 icon="cloud",
             ),
             Project(
-                title="EKS GitOps 3-Tier App",
-                description="Three-tier architecture (Frontend, Backend, Database) deployed on Kubernetes with GitOps.",
+                title="EKS GitOps 3-Tier Application",
+                description="Deployed a complete 3-tier application on Kubernetes using Helm and ArgoCD with automated synchronization and rollback capabilities.",
                 github="https://github.com/TanUjNimkar/eks-gitops-3tier-app",
-                technologies="Kubernetes,ArgoCD,Docker,Helm",
+                technologies="Kubernetes,ArgoCD,Helm,Docker",
                 category="Kubernetes",
                 icon="layers",
             ),
-            Project(
-                title="Next.js Movie Browser",
-                description="Movie browsing application built with Next.js featuring search and API integration.",
-                github="https://github.com/TanUjNimkar/nextjs-movie-browser",
-                technologies="Next.js,React,JavaScript",
-                category="Full-Stack",
-                icon="film",
-            ),
         ]
+
         db.session.bulk_save_objects(projects)
 
     if Skill.query.first() is None:

@@ -6,7 +6,40 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
   background: #020617;
   color: white;
+
   font-family: Inter, system-ui, sans-serif;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6d28d9;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+/* Background Grid */
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+
+  background-size: 40px 40px;
 }

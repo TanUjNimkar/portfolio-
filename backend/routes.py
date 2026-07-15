@@ -17,15 +17,14 @@ def get_profile():
         "location": "Nagpur, India",
         "phone": "+91 81800 16769",
         "email": "tanujnimkar.cloud@gmail.com",
-        "github": "https://www.linkedin.com/in/tanuj-nimkar",
-        "linkedin": "www.linkedin.com/in/tanuj-nimkar",
+        "github": "https://github.com/TanUjNimkar",
+        "linkedin": "https://www.linkedin.com/in/tanuj-nimkar",
         "summary": (
             "AWS-certified DevOps Engineer with proven experience designing and deploying "
             "cloud-native infrastructure on AWS, automating end-to-end CI/CD pipelines, and "
             "orchestrating containerized workloads using Kubernetes and ArgoCD."
         ),
     })
-
 
 # ---------------- PROJECTS ----------------
 @api.route("/projects", methods=["GET"])

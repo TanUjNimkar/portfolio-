@@ -1,8 +1,29 @@
+import { useProfile } from "../../context/ProfileContext";
 import BackgroundGlow from "./BackgroundGlow";
 import TerminalCard from "./TerminalCard";
 import HeroStats from "./HeroStats";
 
 export default function Hero() {
+  const { profile, loading } = useProfile();
+
+  if (loading) {
+    return (
+      <section className="flex min-h-screen items-center justify-center bg-slate-950">
+        <h1 className="text-2xl text-white">Loading...</h1>
+      </section>
+    );
+  }
+
+  if (!profile) {
+    return (
+      <section className="flex min-h-screen items-center justify-center bg-slate-950">
+        <h1 className="text-2xl text-red-400">
+          Unable to load profile
+        </h1>
+      </section>
+    );
+  }
+
   return (
     <section
       id="home"
@@ -21,20 +42,15 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-8 text-6xl font-extrabold leading-tight text-white md:text-7xl">
-            Tanuj
-            <br />
-            Nimkar
+            {profile.name}
           </h1>
 
           <h2 className="mt-6 text-2xl font-semibold text-violet-400">
-            AWS Certified DevOps Engineer
+            {profile.title}
           </h2>
 
           <p className="mt-8 max-w-xl text-lg leading-8 text-slate-400">
-            Building scalable cloud infrastructure,
-            Kubernetes platforms,
-            GitOps pipelines,
-            and production-ready AWS architectures.
+            {profile.summary}
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -48,7 +64,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://github.com/TanUjNimkar"
+              href={profile.github}
               target="_blank"
               rel="noreferrer"
               className="rounded-xl border border-slate-700 px-8 py-4 font-medium text-white transition hover:border-violet-500"
